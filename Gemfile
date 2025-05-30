@@ -11,6 +11,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
   gem 'capybara'
+  gem 'database_cleaner-active_record'
   gem 'factory_bot_rails'
   gem 'pry-byebug'
   gem 'rspec-rails'
