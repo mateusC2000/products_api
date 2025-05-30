@@ -12,6 +12,7 @@ group :development, :test do
   gem "brakeman", require: false
   gem 'capybara'
   gem 'factory_bot_rails'
+  gem 'pry-byebug'
   gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 5.0'
   gem "rubocop-rails-omakase", require: false
