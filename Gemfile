@@ -5,6 +5,7 @@ gem "pg", "~> 1.1"
 gem "puma", ">= 5.0"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
+gem 'rack-cors', '~> 3.0.0'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -14,6 +15,7 @@ group :development, :test do
   gem 'database_cleaner-active_record'
   gem 'factory_bot_rails'
   gem 'pry-byebug'
+  gem 'rack-cors', '~> 3.0.0'
   gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 5.0'
   gem "rubocop-rails-omakase", require: false
