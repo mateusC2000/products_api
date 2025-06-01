@@ -1,9 +1,20 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+require 'factory_bot_rails'
+include FactoryBot::Syntax::Methods
+
+puts "Limpando produtos existentes..."
+Product.destroy_all
+
+puts "Criando produtos com dados variados..."
+
+create(:product, name: "Camiseta Branca", price: 29.90)
+create(:product, name: "Calça Jeans", price: 89.90)
+create(:product, name: "Tênis Esportivo", price: 149.90)
+create(:product, name: "Jaqueta Corta-Vento", price: 199.90)
+create(:product, name: "Meias Coloridas", price: 15.00)
+create(:product, name: "Boné Estampado", price: 39.90)
+create(:product, name: "Mochila Casual", price: 119.00)
+create(:product, name: "Relógio Digital", price: 249.90)
+create(:product, name: "Óculos de Sol", price: 89.00)
+create(:product, name: "Pulseira de Couro", price: 49.50)
+
+puts "✅ Produtos criados com sucesso!"
