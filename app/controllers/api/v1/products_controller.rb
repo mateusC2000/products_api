@@ -1,7 +1,7 @@
 class Api::V1::ProductsController < ApplicationController
   include ProductHelper
 
-  before_action :set_product, only: [:show, :update, :destroy]
+  before_action :set_product, only: [ :show, :update, :destroy ]
 
   def index
     products = Product.order(:name)
@@ -36,7 +36,7 @@ class Api::V1::ProductsController < ApplicationController
 
   def destroy
     @product.destroy
-    render json: { message: 'Produto excluído com sucesso'}
+    render json: { message: "Produto excluído com sucesso" }
   end
 
   private

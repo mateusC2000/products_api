@@ -3,7 +3,7 @@ module ProductHelper
     seen = {}
     first_char = nil
     lowest_ord = 123
-    
+
     name.each_byte do |byte|
       byte += 32 if byte.between?(65, 90)
 
@@ -18,12 +18,12 @@ module ProductHelper
       end
     end
 
-    return '_' if seen.empty?
+    return "_" if seen.empty?
 
     (lowest_ord..122).each do |ord|
       return ord.chr unless seen.key?(ord)
     end
 
-    '_'
+    "_"
   end
 end
