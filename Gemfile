@@ -18,6 +18,6 @@ group :development, :test do
   gem "pry-byebug"
   gem "rack-cors", "~> 3.0.0"
   gem "rspec-rails"
-  gem "shoulda-matchers", "~> 5.0"
+  gem "shoulda-matchers", "~> 6.5"
   gem "rubocop-rails-omakase", require: false
 end
