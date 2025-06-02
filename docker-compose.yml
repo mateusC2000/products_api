@@ -16,7 +16,7 @@ services:
     build:
       context: .
     env_file:
-      - .env.exemple
+      - .env
     environment:
       RAILS_ENV: test
       DATABASE_URL: postgres://postgres:password@db:5432/products_api_test
