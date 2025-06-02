@@ -68,9 +68,28 @@ Esta é a API de produtos da aplicação, responsável por fornecer os dados e o
 
 - brakeman – Scanner de segurança
 
-## 🐳 Iniciando com Docker
+## 📦 Clonando o Repositório
 
-- git clone https://github.com/mateusC2000/products_api
-- cd products_api
-- docker compose up --build
+```bash
+git clone https://github.com/mateusC2000/products_api.git
+cd products_api
+```
 
+
+## ⚙️ Gerando o .env
+
+```
+cp .env.exemple .env
+```
+
+## 🐳 Rodando com Docker
+
+1. Subir os containers:
+
+```
+docker compose up
+```
+
+2. Acessar a aplicação:
+
+- Abra o insomnia/postman e execute as requisições citadas no tópico de Endpoints.
